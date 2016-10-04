@@ -1,0 +1,53 @@
+﻿using System;
+using NUnit.Framework;
+
+namespace Exercises.Events
+{
+    [TestFixture]
+    public class Tests_Part1
+    {
+        [Test]
+        public void AwaitInsideSimpleEvent_Success()
+        {
+            // TODO: Use existing event raiser to raise a simple event
+            // TODO: Call asynchronous Methods.SuccessAsync method and await outcome
+            Assert.Inconclusive(nameof(AwaitInsideSimpleEvent_Success));
+        }
+
+        [Test]
+        public void AwaitInsideSimpleEvent_ThrowsSync()
+        {
+            // TODO: Use existing event raiser to raise a simple event
+            // TODO: Call asynchronous Methods.ThrowsSync() method and await outcome
+            Assert.Inconclusive(nameof(AwaitInsideSimpleEvent_ThrowsSync));
+        }
+
+        [Test]
+        public void AwaitInsideSimpleEvent_ThrowsAsync()
+        {
+            // TODO: Use existing event raiser to raise a simple event
+            // TODO: Call asynchronous Methods.ThrowsAsync() method and await outcome
+            Assert.Inconclusive(nameof(AwaitInsideSimpleEvent_ThrowsAsync));
+        }
+    }
+
+    class EventRaiser
+    {
+        public event EventHandler SimpleEvent;
+        public event EventHandler<CustomEventArgs> ComplexEvent;
+
+        public virtual void RaiseSimpleEvent()
+        {
+            SimpleEvent?.Invoke(this, EventArgs.Empty);
+        }
+
+        public virtual void RaiseComplexEvent()
+        {
+            ComplexEvent?.Invoke(this, new CustomEventArgs());
+        }
+    }
+
+    class CustomEventArgs : EventArgs
+    {
+    }
+}
