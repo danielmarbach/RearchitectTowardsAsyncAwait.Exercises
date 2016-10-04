@@ -4,7 +4,7 @@ using NUnit.Framework;
 namespace Exercises.Events
 {
     [TestFixture]
-    public class Tests_Part1
+    public class TestsPart1
     {
         [Test]
         public void AwaitInsideSimpleEvent_Success()
@@ -29,25 +29,25 @@ namespace Exercises.Events
             // TODO: Call asynchronous Methods.ThrowsAsync() method and await outcome
             Assert.Inconclusive(nameof(AwaitInsideSimpleEvent_ThrowsAsync));
         }
-    }
 
-    class EventRaiser
-    {
-        public event EventHandler SimpleEvent;
-        public event EventHandler<CustomEventArgs> ComplexEvent;
-
-        public virtual void RaiseSimpleEvent()
+        class EventRaiser
         {
-            SimpleEvent?.Invoke(this, EventArgs.Empty);
+            public event EventHandler SimpleEvent;
+            public event EventHandler<CustomEventArgs> ComplexEvent;
+
+            public virtual void RaiseSimpleEvent()
+            {
+                SimpleEvent?.Invoke(this, EventArgs.Empty);
+            }
+
+            public virtual void RaiseComplexEvent()
+            {
+                ComplexEvent?.Invoke(this, new CustomEventArgs());
+            }
         }
 
-        public virtual void RaiseComplexEvent()
+        class CustomEventArgs : EventArgs
         {
-            ComplexEvent?.Invoke(this, new CustomEventArgs());
         }
-    }
-
-    class CustomEventArgs : EventArgs
-    {
     }
 }
