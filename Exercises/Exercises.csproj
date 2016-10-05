@@ -46,6 +46,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="1-Events\1-Tests.cs" />
+    <Compile Include="1-Events\3-Tests.cs" />
+    <Compile Include="2-ResetEvent\1-Tests.cs" />
+    <Compile Include="Extensions.cs" />
     <Compile Include="Methods.cs" />
     <Compile Include="1-Events\2-Tests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
