@@ -51,6 +51,10 @@
     <Compile Include="2-ResetEvent\2-Tests.cs" />
     <Compile Include="2-ResetEvent\AsyncManualResetEvent.cs" />
     <Compile Include="2-ResetEvent\3-Tests.cs" />
+    <Compile Include="3-Locks\1-Tests.cs" />
+    <Compile Include="3-Locks\2-Tests.cs" />
+    <Compile Include="3-Locks\3-Tests.cs" />
+    <Compile Include="3-Locks\AsyncLock.cs" />
     <Compile Include="Extensions.cs" />
     <Compile Include="Methods.cs" />
     <Compile Include="1-Events\2-Tests.cs" />
