@@ -56,6 +56,11 @@
     <Compile Include="3-Locks\3-Tests.cs" />
     <Compile Include="3-Locks\AsyncLock.cs" />
     <Compile Include="4-RefOut\1-Tests.cs" />
+    <Compile Include="4-Remoting\1-Tests.cs" />
+    <Compile Include="4-Remoting\RemoteService.cs" />
+    <Compile Include="5-AmbientState\1-Tests.cs" />
+    <Compile Include="5-AmbientState\2-Tests.cs" />
+    <Compile Include="5-AmbientState\3-Tests.cs" />
     <Compile Include="Extensions.cs" />
     <Compile Include="Methods.cs" />
     <Compile Include="1-Events\2-Tests.cs" />

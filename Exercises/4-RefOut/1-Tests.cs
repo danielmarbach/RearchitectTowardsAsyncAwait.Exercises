@@ -32,7 +32,7 @@ namespace Exercises.RefOut
             // TODO: Refactor Ref to be async
             // TODO: How can you deal with ref params?
 
-            Assert.Inconclusive(nameof(OutParameter));
+            Assert.Inconclusive(nameof(RefParameter));
         }
 
         static void Ref(string content, ref int fileNameLength)
