@@ -61,6 +61,7 @@
     <Compile Include="5-AmbientState\1-Tests.cs" />
     <Compile Include="5-AmbientState\2-Tests.cs" />
     <Compile Include="5-AmbientState\3-Tests.cs" />
+    <Compile Include="6-BringItTogether\1-Tests.cs" />
     <Compile Include="Extensions.cs" />
     <Compile Include="Methods.cs" />
     <Compile Include="1-Events\2-Tests.cs" />
