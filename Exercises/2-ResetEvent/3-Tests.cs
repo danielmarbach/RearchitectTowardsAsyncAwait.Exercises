@@ -9,7 +9,7 @@ namespace Exercises.ResetEvent
         [Test]
         public async Task TwoTasksWithAsyncManualResetEvent()
         {
-            var tcs = new TaskCompletionSource<object>();
+            var syncEvent = new AsyncManualResetEvent(false);
 
             // TODO: Schedule two tasks, one "waits" for the manual reset event 
             // the other one sets the tcs after 2 seconds
