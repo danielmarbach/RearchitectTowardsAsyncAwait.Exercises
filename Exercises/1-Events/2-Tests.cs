@@ -10,24 +10,24 @@ namespace Exercises.Events
         [Test]
         public void AwaitInsideSimpleEvent_Success()
         {
-            // TODO: Use existing event raiser to raise a simple event
-            // TODO: Call asynchronous Methods.SuccessAsync method and await outcome
+            // TODO: Use existing event raiser to attach an EventHandler and raise a simple event
+            // TODO: Within EventHandler call asynchronous Methods.SuccessAsync method and await outcome
             Assert.Inconclusive(nameof(AwaitInsideSimpleEvent_Success));
         }
 
         [Test]
         public void AwaitInsideSimpleEvent_ThrowsSync()
         {
-            // TODO: Use existing event raiser to raise a simple event
-            // TODO: Call asynchronous Methods.ThrowsSync() method and await outcome
+            // TODO: Use existing event raiser to attach an EventHandler and raise a simple event
+            // TODO: Within EventHandler call asynchronous Methods.ThrowsSync() method and await outcome
             Assert.Inconclusive(nameof(AwaitInsideSimpleEvent_ThrowsSync));
         }
 
         [Test]
         public void AwaitInsideSimpleEvent_ThrowsAsync()
         {
-            // TODO: Use existing event raiser to raise a simple event
-            // TODO: Call asynchronous Methods.ThrowsAsync() method and await outcome
+            // TODO: Use existing event raiser to attach an EventHandler and raise a simple event
+            // TODO: Within EventHandler call asynchronous Methods.ThrowsAsync() method and await outcome
             Assert.Inconclusive(nameof(AwaitInsideSimpleEvent_ThrowsAsync));
         }
 
